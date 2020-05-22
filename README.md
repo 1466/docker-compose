@@ -17,7 +17,7 @@ hello-docker-compose
 下载源代码，在有docker-compose.yml的目录下下输入 docker-compose up -d 命令。完成启动后使用docker ps查看会出现类似如下内容
 ```yaml
     CONTAINER ID        IMAGE                            COMMAND                  CREATED             STATUS              PORTS                NAMES
-    9e601c8ae358        nginx:alpine                     "nginx -g 'daemon of…"   50 minutes ago      Up 49 minutes       0.0.0.0:80-          >80/tcp   firstdocker_nginx_1
+    9e601c8ae358        nginx:alpine                     "nginx -g 'daemon of…"   50 minutes ago      Up 49 minutes       0.0.0.0:80->80/tcp   firstdocker_nginx_1
     5fa15d44c2f8        devilbox/php-fpm:5.2-work-0.89   "/docker-entrypoint.…"   53 minutes ago      Up 53 minutes       9000/tcp             firstdocker_php_1
     96bf8fa67f3f        mysql:5.6                        "docker-entrypoint.s…"   53 minutes ago      Up 53 minutes       3306/tcp             firstdocker_mysql_1
 ```
