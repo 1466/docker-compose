@@ -14,7 +14,15 @@ hello-docker-compose
     |-- docker-compose.yml  // docker-compose 主配置文件
 ```
 使用方法：
-下载源代码，在有docker-compose.yml的目录下下输入 docker-compose up -d 命令。完成启动后使用docker ps查看会出现类似如下内容
+```yaml
+# 1 下载源码
+git clone https://github.com/1466/docker-compose.git
+# 2 
+cd docker-compose
+# 3
+ docker-compose up -d 
+```
+完成后 ,输入docker ps 内容如下
 ```yaml
     CONTAINER ID        IMAGE                            COMMAND                  CREATED             STATUS              PORTS                NAMES
     9e601c8ae358        nginx:alpine                     "nginx -g 'daemon of…"   50 minutes ago      Up 49 minutes       0.0.0.0:80->80/tcp   firstdocker_nginx_1
